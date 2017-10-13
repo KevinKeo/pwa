@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="/node_modules/bootstrap/dist/css/bootstrap.css">
+    </head>
+    <body>
+        <div class="container">
+            <div id="navbar"></div>
+            <div class="row">
+                <div class="col-14 col-md-10 col-offset-2 col-md-offset-1"><h1 id="name"></h1></div>
+            </div>
+            <div class="row">
+                <div class="col-14 col-md-10 col-offset-2 col-md-offset-1"><h2>Biographie</h2></div>
+            </div>
+            <div class="row">
+                <div class="col-14 col-md-10 col-offset-2 col-md-offset-1" id="shortBio">test</div>
+            </div>            
+            <div class="row">
+               <div class="col-14 col-md-10 col-offset-2 col-md-offset-1"><h2>Ses présentations</h2></div>
+            </div>
+            <div class="row">
+                <div class="col-14 col-md-10 col-offset-2 col-md-offset-1" id="presentations"></div>
+            </div>
+        </div>
+        <script src="/js/sessions.js"></script>
+        <script src="/js/speakers.js"></script>
+        <script>renderInfoSpeakerById();</script>
+        <script src="/app.js"></script>
+        <script src="/js/jquery-3.2.1.min.js"></script>
+        <script src="/js/popper.min.js"></script>
+        <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script> 
+           $(function(){
+              $('#navbar').load("/html/nav.html");
+           });
+        </script> 
+    </body>
+</html>

@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="/node_modules/bootstrap/dist/css/bootstrap.css">
+    </head>
+    <body>
+        <div class="container">
+            <div id="navbar"></div>
+            <div class="row">
+                <div class="col-14 col-md-10 col-offset-2 col-md-offset-1 text-center"><a id="sessionlink" href="#"><h1 id="title"></h1></a></div>
+            </div>
+            <div class="row">
+                <div class="col-14 col-md-10 col-offset-2 col-md-offset-1" >
+                    <button  class="btn btn-default btn-block" type="submit" value="Submit" onclick="addNotes()">Enregistrer</button>
+                 </div>  
+            </div>
+            <div class="row">
+                <div class="col-14 col-md-10 col-offset-2 col-md-offset-1 text-center">
+                    <label for="note">Mes notes : </label>
+                    <textarea class="form-control" rows="8" id="note"></textarea>
+                </div>
+            </div>
+        </div>
+        
+        <script src="/js/notes.js"> </script>
+        <script src="/js/sessions.js"></script>
+        
+        <script>renderNotesHTML();</script>
+        <script src="/app.js"></script>
+        <script src="/js/jquery-3.2.1.min.js"></script>
+        <script src="/js/popper.min.js"></script>
+        <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script> 
+           $(function(){
+              $('#header').load("/html/header.html");
+              $('#navbar').load("/html/nav.html");
+           });
+        </script> 
+    </body>
+</html>

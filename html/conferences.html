@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="/node_modules/bootstrap/dist/css/bootstrap.css">
+    </head>
+    <body>
+        <div class="container">
+            <div id="navbar"></div>
+            <div id="container" class="row">
+                <ul id="liste"></ul>
+            </div>
+        </div>
+
+
+        <script src="/js/sessions.js"></script>
+        <script>getAllTitle();</script>
+        <script src="/app.js"></script>
+        <script src="/js/jquery-3.2.1.min.js"></script>
+        <script src="/js/popper.min.js"></script>
+        <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script> 
+           $(function(){
+              $('#navbar').load("/html/nav.html");
+           });
+        </script> 
+    </body>
+</html>
